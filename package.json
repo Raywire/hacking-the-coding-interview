@@ -1,0 +1,23 @@
+{
+  "name": "hacking-the-coding-interview",
+  "version": "1.0.0",
+  "description": "Solutions to common coding questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --verbose --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raywire/hacking-the-coding-interview.git"
+  },
+  "author": "Ryan Wire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raywire/hacking-the-coding-interview/issues"
+  },
+  "homepage": "https://github.com/Raywire/hacking-the-coding-interview#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
