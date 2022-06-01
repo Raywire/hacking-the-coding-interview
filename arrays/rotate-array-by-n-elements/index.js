@@ -21,6 +21,10 @@ let rotateArray = function(nums, n) {
   reverseArray(nums, 0, len - 1);
   reverseArray(nums, 0, n - 1);
   reverseArray(nums, n, len - 1);
+
+  return nums
 };
 
-module.exports = rotateArray;
+module.exports = {
+  rotateArray
+};
