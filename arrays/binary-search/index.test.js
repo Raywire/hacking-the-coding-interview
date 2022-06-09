@@ -5,6 +5,10 @@ test('checks binary search works', () => {
 });
 
 test('checks binary search works', () => {
+  expect(binarySearch([5], 5)).toBe(0);
+});
+
+test('checks binary search works', () => {
   expect(binarySearch([0, 1], 1)).toBe(1);
 });
 
