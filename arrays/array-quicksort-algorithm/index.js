@@ -8,6 +8,7 @@ let partition = function(nums, low, high) {
   // Loop till i pointer crosses j pointer
   while (i < j) {
     // Increment the 'i' pointer till it finds an element greater than pivot
+    // i <= high &&  not needed
     while (i <= high && nums[i] <= pivotValue) {
       i++;
     }
