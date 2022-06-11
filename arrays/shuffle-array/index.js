@@ -11,6 +11,7 @@ class Solution {
       // make a copy of the original
       this.original.forEach((v, index) => shuffled[index] = v);  
       
+      // initialize unshuffled left part size
       let leftSize = this.n;
 
       for (let i = 0; i < shuffled.length; i++) {
