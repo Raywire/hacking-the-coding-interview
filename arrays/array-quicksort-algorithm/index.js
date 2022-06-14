@@ -18,13 +18,13 @@ let partition = function(nums, low, high) {
     }
     // Swap the numbers on 'i' and 'j'
     if (i < j) {
-      // Swap pivot element with element on 'j' pointer.
       let temp = nums[i];
       nums[i] = nums[j];
       nums[j] = temp;
     } 
   }
 
+  // Swap pivot element with element on 'j' pointer.
   nums[low] = nums[j];
   nums[j] = pivotValue;
 
