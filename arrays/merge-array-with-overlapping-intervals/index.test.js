@@ -23,3 +23,15 @@ test('checks if merging arrays with overlapping intervals works', () => {
 
   expect(mergeIntervals(v1)).toEqual([{"first": 1, "second": 5}]);
 });
+
+test('checks if merging arrays with overlapping intervals works', () => {
+  let v1 =  [new Pair(1, 4), new Pair(0, 4)];
+
+  expect(mergeIntervals(v1)).toEqual([{"first": 0, "second": 4}]);
+});
+
+test('checks if merging arrays with overlapping intervals works', () => {
+  let v1 =  [new Pair(1, 4), new Pair(0, 0)];
+
+  expect(mergeIntervals(v1)).toEqual([{"first": 0, "second": 0}, {"first": 1, "second": 4}]);
+});
