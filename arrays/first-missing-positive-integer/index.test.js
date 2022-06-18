@@ -7,3 +7,7 @@ test('checks if finding first missing positive number works', () => {
 test('checks if finding first missing positive number works', () => {
   expect(firstMissingPositive([0, 5, 1, 3, 2, 4])).toEqual(6);
 });
+
+test('checks if finding first missing positive number works', () => {
+  expect(firstMissingPositive([1, 2, 0])).toEqual(3);
+});
