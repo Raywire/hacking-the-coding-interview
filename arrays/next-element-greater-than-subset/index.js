@@ -4,7 +4,7 @@ function nextGreaterElement(nums1, nums2) {
 
   for (let i = 0; i < nums2.length; i++) {
     // if the stack is not empty and the new element is greater than stack's top element, then add this to hashMap 
-    while (stack.length != 0 && nums2[i] > stack[stack.length-1]){
+    while (stack.length != 0 && nums2[i] > stack[stack.length - 1]){
       map.set(stack.pop(), nums2[i]);  
     }
     stack.push(nums2[i]);
