@@ -29,6 +29,7 @@ let firstMissingPositive = function(nums) {
     // In order to avoid changing the sign of the element to positive on
     // encountering the duplicates we will take the absolute of the value.
 
+    // Use index 0 to save an information about presence of number n since index n is not available
     if (a == length)
         nums[0] = - Math.abs(nums[0]);
     else
