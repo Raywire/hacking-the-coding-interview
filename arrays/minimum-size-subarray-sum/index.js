@@ -8,11 +8,12 @@ let minSubArrayLen = function(target, nums) {
   let sum = 0;
   
   //  Iterate over the nums array
-  for(let i=0;i < nums.length; i++){
+  for (let i = 0; i < nums.length; i++) {
     sum += nums[i];
     //  check if we can remove elements from the left side 
     // of the sub-array while still satisfying the target condition
-    while (sum >= target){
+    while (sum >= target) {
+      // adding 1 because it is zero based
       let currSubArrSize = (i + 1) - left;
       result = Math.min(result, currSubArrSize);
       sum -= nums[left];
